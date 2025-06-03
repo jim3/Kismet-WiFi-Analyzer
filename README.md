@@ -2,4 +2,4 @@
 
 - HTML/JavaScript Upload File Form
 - Golang Parser
-- File format: TBD
+- File format to be parsed: TBD
