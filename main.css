@@ -1,0 +1,22 @@
+/* Give me CSS that gives a background and text color */
+body {
+    background-color: #0D1616; /* Light gray background */
+    color: #8AA19C; /* Dark gray text color */
+}
+
+/* Style for headings */
+h1, h2, h3 {
+    color: #8AA19C; /* Dark gray text color for headings */
+}
+
+/* Style for links */
+a {
+    color: #8AA19C; /* Dark gray text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Style for links on hover */
+a:hover {
+    color: #A0B2A1; /* Lighter gray text color for links on hover */
+    text-decoration: underline; /* Underline links on hover */
+}

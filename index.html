@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload2Parser</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>Upload2Parser</h1>
+    <div id="upload">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="filename">Filename:</label>
+            <input type="file" id="filename" name="filename"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector("#upload");
+        form.addEventListener("submit", event => {
+            event.preventDefault(); // prevent reloading
+            // event callback (when the form is submitted)
+            console.log("form submitted");
+        });
+    </script>
+</body>
+
+</html>
