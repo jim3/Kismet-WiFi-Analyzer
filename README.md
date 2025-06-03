@@ -1,3 +1,5 @@
 ```bash
-# HTML & JavaScript Upload File Form | Golang Parser
+# HTML/JavaScript Upload File Form
+#  Golang Parser
+# File format: TBD
 ```
