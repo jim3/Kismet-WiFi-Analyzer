@@ -1,0 +1,5 @@
+# Ignore all files in the notes directory
+notes
+
+# Ignore the JSON test file
+ap.json
