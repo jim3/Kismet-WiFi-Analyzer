@@ -8,22 +8,21 @@
 </head>
 
 <body>
-    <h1>Upload2Parser</h1>
-    <div id="upload">
-        <form action="/upload" method="post" enctype="multipart/form-data">
+    
+        <form action="http://localhost:8080/upload" method="post" enctype="multipart/form-data">
             <label for="filename">Filename:</label>
-            <input type="file" id="filename" name="filename"><br><br>
+            <input type="file" id="filename" name="uploadfile"><br><br>
             <input type="submit" value="Submit">
         </form>
-    </div>
-    <script>
+    
+    <!-- <script>
         const form = document.querySelector("#upload");
         form.addEventListener("submit", event => {
             event.preventDefault(); // prevent reloading
             // event callback (when the form is submitted)
             console.log("form submitted");
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
