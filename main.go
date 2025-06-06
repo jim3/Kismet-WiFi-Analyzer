@@ -45,7 +45,6 @@ func upload2parser(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// Create a new servemux
 	mux := http.NewServeMux()
 	mux.HandleFunc("/upload", upload2parser)
 	mux.Handle("/", http.FileServer(http.Dir("/github.com/<USERNAME>/project-dir")))
