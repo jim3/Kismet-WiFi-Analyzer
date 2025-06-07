@@ -20,7 +20,6 @@ func upload2parser(w http.ResponseWriter, r *http.Request) {
 	}
 	defer file.Close()
 
-	// Print out header for debugging
 	fmt.Fprintf(w, "%v", header.Header)
 
 	// Create a nil slice
@@ -46,6 +45,7 @@ func upload2parser(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	mux := http.NewServeMux()
+	// Register the upload2parser function to handle requests to "/upload"
 	mux.HandleFunc("/upload", upload2parser)
 	mux.Handle("/", http.FileServer(http.Dir("/github.com/<USERNAME>/project-dir")))
 
